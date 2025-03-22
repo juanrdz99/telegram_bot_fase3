@@ -7,11 +7,11 @@ import time
 from typing import List, Dict, Any
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
-from config import UPDATE_INTERVAL
-from livescore_client import LiveScoreClient
-from telegram_client import TelegramClient
-from formatter import MatchFormatter
-from match_tracker import MatchTracker
+from core.config import UPDATE_INTERVAL
+from core.livescore_client import LiveScoreClient
+from core.telegram_client import TelegramClient
+from core.formatter import MatchFormatter
+from core.match_tracker import MatchTracker
 
 # Configure logging
 logging.basicConfig(
