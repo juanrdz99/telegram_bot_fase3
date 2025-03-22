@@ -1,0 +1,2187 @@
+[
+  {
+    "round": "13",
+    "date": "2025-03-29",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio Victoria de Aguascalientes",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Necaxa",
+    "home_id": 765,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Queretaro FC",
+    "home_translations": {
+      "fr": "Club Necaxa",
+      "ru": "Некакса",
+      "ja": "ネカクサ",
+      "th": "นีเคเอ้กซ์",
+      "it": "Club Necaxa",
+      "bg": "Некакса",
+      "el": "Νεκάξα",
+      "ar": "نيكاسا",
+      "ko": "네크사",
+      "de": "Club Necaxa",
+      "fa": "نکاکسا",
+      "sr": "Некакса",
+      "zh": "尼卡沙"
+    },
+    "time": "01:00:00",
+    "away_translations": {
+      "fr": "Queretaro",
+      "ro": "Queretaro",
+      "ja": "ケレタロ",
+      "hu": "Queretaro",
+      "th": "ควานเลสทราโด้ เอฟซี",
+      "bg": "Керетаро",
+      "nl": "Queretaro",
+      "el": "Κερετάρο",
+      "tr": "Queretaro",
+      "pt": "Queretaro",
+      "vi": "Queretaro",
+      "ar": "كويريتارو",
+      "ko": "케레타로",
+      "de": "Querétaro FC",
+      "es": "Querétaro (Santiago de Querétaro)",
+      "pl": "Queretaro",
+      "fa": "کرتارو",
+      "ru": "Куэретаро",
+      "sr": "Керетаро",
+      "zh": "克雷塔羅"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 778,
+    "id": 1746492,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=765&team2_id=778"
+  },
+  {
+    "round": "13",
+    "date": "2025-03-29",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio de Futbol de Mazatlán",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Mazatlan",
+    "home_id": 5921,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Atlas",
+    "home_translations": {
+      "ar": "مازاتلان إف سي",
+      "fr": "Mazatlan",
+      "ru": "Масатлан",
+      "ja": "マサトランFC",
+      "es": "Mazatlan",
+      "bg": "Масатлан ФК",
+      "el": "Μαζατλάν",
+      "ko": "마자틀란 FC",
+      "zh": "馬薩特蘭FC"
+    },
+    "time": "03:00:00",
+    "away_translations": {
+      "ar": "أتلاس",
+      "ko": "아틀라스",
+      "de": "Atlas Guadalajara",
+      "ja": "アトラス",
+      "th": "แอตลาส",
+      "fa": "اطلس",
+      "bg": "Атлас",
+      "el": "Άτλας",
+      "ru": "Атлас",
+      "sr": "Атлас",
+      "zh": "阿特拿斯"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 458,
+    "id": 1746494,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=5921&team2_id=458"
+  },
+  {
+    "round": "13",
+    "date": "2025-03-29",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio Olímpico Benito Juárez",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "FC Juarez",
+    "home_id": 2495,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Puebla",
+    "home_translations": {
+      "fr": "Juarez",
+      "ro": "Juarez",
+      "ja": "フアレス",
+      "hu": "Juarez",
+      "th": "เอฟซี จัวร์อาเรซ",
+      "it": "Juarez",
+      "bg": "Хуарес",
+      "nl": "Juarez",
+      "el": "Χουάρεθ",
+      "tr": "Juarez",
+      "pt": "Juarez",
+      "vi": "Juarez",
+      "ar": "خواريز",
+      "ko": "후아레스",
+      "de": "FC Juárez",
+      "es": "Juárez",
+      "pl": "Juarez",
+      "fa": "جوارز",
+      "ru": "Хуарес",
+      "sr": "Хуарез",
+      "zh": "祖亞雷斯"
+    },
+    "time": "22:00:00",
+    "away_translations": {
+      "ru": "Пуэбла",
+      "ja": "プエブラ",
+      "th": "พัฟเบิล เอฟซี",
+      "bg": "Пуебла",
+      "el": "Πουέμπλα",
+      "vi": "CLB Puebla",
+      "ar": "بويبلا",
+      "ko": "푸에블라",
+      "de": "Puebla FC",
+      "es": "Puebla FC",
+      "fa": "پوئبلا سیتی",
+      "sr": "Пуебла",
+      "zh": "普埃布拉"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 456,
+    "id": 1746493,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=2495&team2_id=456"
+  },
+  {
+    "round": "13",
+    "date": "2025-03-29",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio Nemesio Díez",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Toluca",
+    "home_id": 1050,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Pachuca",
+    "home_translations": {
+      "fr": "Deportivo Toluca",
+      "ru": "Толука",
+      "ja": "トルーカ",
+      "th": "เดอปอร์ติโว่ โตลูก้า เอฟซี",
+      "bg": "Толука",
+      "el": "Τολούκα",
+      "ar": "تولوكا",
+      "ko": "톨루카",
+      "de": "Deportivo Toluca",
+      "es": "FC Toluca",
+      "fa": "تولوکا",
+      "sr": "Депортиво Толука",
+      "zh": "托盧卡"
+    },
+    "time": "22:00:00",
+    "away_translations": {
+      "ru": "Пачука",
+      "ja": "パチューカ",
+      "th": "ซีเอฟ ปาชูการ์",
+      "it": "CF Pachuca",
+      "bg": "Пачука",
+      "el": "Πατσούκα",
+      "ar": "باتشوكا",
+      "ko": "파추카",
+      "de": "CF Pachuca",
+      "es": "Pachuca FC",
+      "fa": "پاچوکا",
+      "sr": "Пачука",
+      "zh": "帕丘卡"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 459,
+    "id": 1746495,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=1050&team2_id=459"
+  },
+  {
+    "round": "13",
+    "date": "2025-03-30",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio Azteca",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "CF America",
+    "home_id": 1067,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Tigres",
+    "home_translations": {
+      "ru": "Америка",
+      "ja": "クラブ アメリカ",
+      "th": "คลับ อเมริกา",
+      "bg": "Америка",
+      "el": "Αμέρικα",
+      "ar": "أميريكا",
+      "ko": "클럽 아메리카",
+      "de": "Club América",
+      "es": "Club América (México)",
+      "fa": "سی اف آمریکا",
+      "ka": "ამერიკა",
+      "lt": "América",
+      "sr": "Америка",
+      "zh": "阿美利加會"
+    },
+    "time": "01:05:00",
+    "away_translations": {
+      "fr": "Tigres de laUANL",
+      "el": "Τιγκρές",
+      "hu": "Tigres",
+      "th": "ทิกรีน",
+      "it": "Tigri UANL",
+      "bg": "Тигрес УАНЛ",
+      "nl": "Tigres",
+      "fa": "تیگرس",
+      "tr": "Tigres",
+      "pt": "Tigres",
+      "ro": "Tigres",
+      "ar": "تيغريس",
+      "ko": "티그레스 데 라 UANL",
+      "de": "UANL Tigres",
+      "es": "Tigres de la UANL (Monterrey)",
+      "pl": "Tigres",
+      "vi": "Tigres",
+      "ru": "Тигрес УАНЛ",
+      "sr": "Тигрес",
+      "zh": "堤格雷斯"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 767,
+    "id": 1746496,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=1067&team2_id=767"
+  },
+  {
+    "round": "13",
+    "date": "2025-03-30",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio AKRON",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "CD Guadalajara",
+    "home_id": 766,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Cruz Azul",
+    "home_translations": {
+      "fr": "Guadalajara",
+      "ru": "Гвадалахара",
+      "ja": "グアダラハラ・チーバス",
+      "hu": "Guadalajara",
+      "th": "กัวดาลาจาร่า",
+      "it": "CD Guadalajara",
+      "bg": "Чивас Гуадалахара",
+      "nl": "Guadalajara",
+      "el": "Γουαδαλαχάρα",
+      "tr": "Guadalajara",
+      "pt": "Guadalajara",
+      "ro": "Guadalajara",
+      "ar": "غوادالاهارا",
+      "ko": "시바스 과달라하라",
+      "de": "CD Guadalajara",
+      "pl": "Guadalajara",
+      "fa": "گوادالاخارا",
+      "ka": "ჩივას გუადალაჰარა",
+      "sr": "Чивас Гвадалахара",
+      "zh": "哥達拿查拉"
+    },
+    "time": "03:05:00",
+    "away_translations": {
+      "fr": "Cruz Azul",
+      "ru": "Крус Асул",
+      "ja": "クルス・アスル",
+      "th": "คัส อูล",
+      "it": "Croce Azzurra",
+      "bg": "Крус Асул",
+      "da": "Cruz Azul",
+      "tr": "Cruz Azul",
+      "ro": "Cruz Azul",
+      "et": "Cruz Azul",
+      "pl": "Cruz Azul",
+      "fa": "کروز آزول",
+      "fi": "Cruz Azul",
+      "sk": "Cruz Azul",
+      "sr": "Круз Азул",
+      "cs": "Cruz Azul",
+      "hu": "Cruz Azul",
+      "sv": "Cruz Azul",
+      "hr": "Cruz Azul",
+      "el": "Κρούζ Αζούλ",
+      "pt": "Cruz Azul",
+      "vi": "Cruz Azul",
+      "ar": "كروز أزول",
+      "ko": "크루즈 아즐",
+      "de": "Cruz Azul",
+      "no": "Cruz Azul",
+      "es": "Cruz Azul",
+      "nl": "Cruz Azul",
+      "lt": "Cruz Azul",
+      "zh": "藍十字"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 771,
+    "id": 1746498,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=766&team2_id=771"
+  },
+  {
+    "round": "13",
+    "date": "2025-03-30",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio BBVA Bancomer",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Monterrey",
+    "home_id": 768,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Tijuana",
+    "home_translations": {
+      "ru": "Монтеррей",
+      "ja": "モンテレイ",
+      "th": "มอนเตอร์เรย์",
+      "it": "CF Monterrey",
+      "bg": "Монтерей",
+      "el": "Μοντερέι",
+      "ar": "مونتيري",
+      "ko": "몬테레이",
+      "de": "CF Monterrey",
+      "fa": "مونتری",
+      "sr": "Монтереј",
+      "zh": "蒙特雷"
+    },
+    "time": "03:10:00",
+    "away_translations": {
+      "fr": "Tijuana",
+      "ru": "Тихуана",
+      "ja": "クラブ・ティフアナ",
+      "hu": "Tijuana",
+      "th": "คลับ ทิจูเอน่า",
+      "bg": "Клуб Тихуана",
+      "nl": "Tijuana",
+      "el": "Κλαμπ Τιχουάνα",
+      "tr": "Tijuana",
+      "pt": "Tijuana",
+      "ro": "Tijuana",
+      "ar": "تيخوانا",
+      "ko": "클럽 티화나",
+      "es": "FC Tijuana",
+      "pl": "Tijuana",
+      "fa": "تیخوانا",
+      "zh": "堤華納"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 1465,
+    "id": 1746497,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=768&team2_id=1465"
+  },
+  {
+    "round": "13",
+    "date": "2025-03-30",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio Nuevo Corona ",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Santos Laguna",
+    "home_id": 1464,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Atlético San Luis",
+    "home_translations": {
+      "ar": "سانتوس لاغونا",
+      "ko": "산토스 라구나",
+      "ru": "Сантос Лагуна",
+      "ja": "サントス・ラグナ",
+      "es": "Santos Laguna (Torreón)",
+      "th": "ซานโตส ลากูน่า",
+      "fa": "سانتوس لاگونا",
+      "bg": "Сантос Лагуна",
+      "el": "Σάντος Λαγκούνα",
+      "sr": "Сантос Лагуна",
+      "zh": "拿根亞"
+    },
+    "time": "23:00:00",
+    "away_translations": {
+      "ru": "Атлетико Сан-Луис",
+      "ja": "ｱﾄﾚﾃｨｺ･ｻﾝﾙｲｽ",
+      "hu": "Atl. San Luis",
+      "th": "อเทลทิโก้ วัน ลูวิส",
+      "it": "Atl. San Luis",
+      "bg": "Атл. Сан Луис",
+      "nl": "Atl. San Luis",
+      "el": "Ατλέτικο Σαν Λουίς",
+      "tr": "Atl. San Luis",
+      "pt": "Atl. San Luis",
+      "ro": "Atl. San Luis",
+      "ar": "أتلتيكو سان لويس",
+      "ko": "아틀레티코 산 루이스",
+      "de": "Atlético San Luis",
+      "pl": "Atl. San Luis",
+      "fa": "اتلتیکو سن لوئیس",
+      "sr": "Атлетико Сан Луис",
+      "zh": "聖路易斯競技"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 3357,
+    "id": 1746499,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=1464&team2_id=3357"
+  },
+  {
+    "round": "13",
+    "date": "2025-03-31",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio León (Nou Camp)",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Leon",
+    "home_id": 769,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Pumas",
+    "home_translations": {
+      "fr": "Leon",
+      "ru": "Леон",
+      "ja": "クラブレオン",
+      "hu": "Leon",
+      "th": "คลับ ลีออน",
+      "it": "Leon",
+      "bg": "Клуб Леон",
+      "nl": "Leon",
+      "el": "Κλαμπ Λεόν",
+      "tr": "Leon",
+      "pt": "Leon",
+      "ro": "Leon",
+      "ar": "ليون",
+      "ko": "클럽 레온",
+      "de": "Club León",
+      "es": "Leon",
+      "pl": "Leon",
+      "fa": "لئون",
+      "sr": "Леон",
+      "zh": "萊昂"
+    },
+    "time": "01:00:00",
+    "away_translations": {
+      "fr": "Club Universidad Nacional",
+      "el": "Πούμας",
+      "hu": "UNAM",
+      "th": "พูมาส",
+      "it": "UNAM Pumas",
+      "bg": "УНАМ Пумас",
+      "nl": "UNAM",
+      "fa": "یونیورسیداد ناسیونال",
+      "tr": "UNAM",
+      "pt": "UNAM",
+      "ro": "UNAM",
+      "ar": "بوماس يونام",
+      "ko": "푸마스 U.N.A.M.",
+      "de": "UNAM Pumas",
+      "es": "Pumas UNAM",
+      "pl": "UNAM",
+      "vi": "U.N.A.M.- Pumas",
+      "ru": "Пумас УНАМ",
+      "sr": "Пумас УНАМ",
+      "zh": "普馬斯"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 779,
+    "id": 1746669,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=769&team2_id=779"
+  },
+  {
+    "round": "14",
+    "date": "2025-04-05",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio Corregidora",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Queretaro FC",
+    "home_id": 778,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Leon",
+    "home_translations": {
+      "fr": "Queretaro",
+      "ro": "Queretaro",
+      "ja": "ケレタロ",
+      "hu": "Queretaro",
+      "th": "ควานเลสทราโด้ เอฟซี",
+      "bg": "Керетаро",
+      "nl": "Queretaro",
+      "el": "Κερετάρο",
+      "tr": "Queretaro",
+      "pt": "Queretaro",
+      "vi": "Queretaro",
+      "ar": "كويريتارو",
+      "ko": "케레타로",
+      "de": "Querétaro FC",
+      "es": "Querétaro (Santiago de Querétaro)",
+      "pl": "Queretaro",
+      "fa": "کرتارو",
+      "ru": "Куэретаро",
+      "sr": "Керетаро",
+      "zh": "克雷塔羅"
+    },
+    "time": "01:00:00",
+    "away_translations": {
+      "fr": "Leon",
+      "ru": "Леон",
+      "ja": "クラブレオン",
+      "hu": "Leon",
+      "th": "คลับ ลีออน",
+      "it": "Leon",
+      "bg": "Клуб Леон",
+      "nl": "Leon",
+      "el": "Κλαμπ Λεόν",
+      "tr": "Leon",
+      "pt": "Leon",
+      "ro": "Leon",
+      "ar": "ليون",
+      "ko": "클럽 레온",
+      "de": "Club León",
+      "es": "Leon",
+      "pl": "Leon",
+      "fa": "لئون",
+      "sr": "Леон",
+      "zh": "萊昂"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 769,
+    "id": 1746500,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=778&team2_id=769"
+  },
+  {
+    "round": "14",
+    "date": "2025-04-05",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio Caliente",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Tijuana",
+    "home_id": 1465,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Necaxa",
+    "home_translations": {
+      "fr": "Tijuana",
+      "ru": "Тихуана",
+      "ja": "クラブ・ティフアナ",
+      "hu": "Tijuana",
+      "th": "คลับ ทิจูเอน่า",
+      "bg": "Клуб Тихуана",
+      "nl": "Tijuana",
+      "el": "Κλαμπ Τιχουάνα",
+      "tr": "Tijuana",
+      "pt": "Tijuana",
+      "ro": "Tijuana",
+      "ar": "تيخوانا",
+      "ko": "클럽 티화나",
+      "es": "FC Tijuana",
+      "pl": "Tijuana",
+      "fa": "تیخوانا",
+      "zh": "堤華納"
+    },
+    "time": "03:00:00",
+    "away_translations": {
+      "fr": "Club Necaxa",
+      "ru": "Некакса",
+      "ja": "ネカクサ",
+      "th": "นีเคเอ้กซ์",
+      "it": "Club Necaxa",
+      "bg": "Некакса",
+      "el": "Νεκάξα",
+      "ar": "نيكاسا",
+      "ko": "네크사",
+      "de": "Club Necaxa",
+      "fa": "نکاکسا",
+      "sr": "Некакса",
+      "zh": "尼卡沙"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 765,
+    "id": 1746501,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=1465&team2_id=765"
+  },
+  {
+    "round": "14",
+    "date": "2025-04-05",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio Cuauhtémoc",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Puebla",
+    "home_id": 456,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Tigres",
+    "home_translations": {
+      "ru": "Пуэбла",
+      "ja": "プエブラ",
+      "th": "พัฟเบิล เอฟซี",
+      "bg": "Пуебла",
+      "el": "Πουέμπλα",
+      "vi": "CLB Puebla",
+      "ar": "بويبلا",
+      "ko": "푸에블라",
+      "de": "Puebla FC",
+      "es": "Puebla FC",
+      "fa": "پوئبلا سیتی",
+      "sr": "Пуебла",
+      "zh": "普埃布拉"
+    },
+    "time": "03:05:00",
+    "away_translations": {
+      "fr": "Tigres de laUANL",
+      "el": "Τιγκρές",
+      "hu": "Tigres",
+      "th": "ทิกรีน",
+      "it": "Tigri UANL",
+      "bg": "Тигрес УАНЛ",
+      "nl": "Tigres",
+      "fa": "تیگرس",
+      "tr": "Tigres",
+      "pt": "Tigres",
+      "ro": "Tigres",
+      "ar": "تيغريس",
+      "ko": "티그레스 데 라 UANL",
+      "de": "UANL Tigres",
+      "es": "Tigres de la UANL (Monterrey)",
+      "pl": "Tigres",
+      "vi": "Tigres",
+      "ru": "Тигрес УАНЛ",
+      "sr": "Тигрес",
+      "zh": "堤格雷斯"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 767,
+    "id": 1746502,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=456&team2_id=767"
+  },
+  {
+    "round": "14",
+    "date": "2025-04-05",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio Jalisco",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Atlas",
+    "home_id": 458,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "FC Juarez",
+    "home_translations": {
+      "ar": "أتلاس",
+      "ko": "아틀라스",
+      "de": "Atlas Guadalajara",
+      "ja": "アトラス",
+      "th": "แอตลาส",
+      "fa": "اطلس",
+      "bg": "Атлас",
+      "el": "Άτλας",
+      "ru": "Атлас",
+      "sr": "Атлас",
+      "zh": "阿特拿斯"
+    },
+    "time": "23:00:00",
+    "away_translations": {
+      "fr": "Juarez",
+      "ro": "Juarez",
+      "ja": "フアレス",
+      "hu": "Juarez",
+      "th": "เอฟซี จัวร์อาเรซ",
+      "it": "Juarez",
+      "bg": "Хуарес",
+      "nl": "Juarez",
+      "el": "Χουάρεθ",
+      "tr": "Juarez",
+      "pt": "Juarez",
+      "vi": "Juarez",
+      "ar": "خواريز",
+      "ko": "후아레스",
+      "de": "FC Juárez",
+      "es": "Juárez",
+      "pl": "Juarez",
+      "fa": "جوارز",
+      "ru": "Хуарес",
+      "sr": "Хуарез",
+      "zh": "祖亞雷斯"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 2495,
+    "id": 1746503,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=458&team2_id=2495"
+  },
+  {
+    "round": "14",
+    "date": "2025-04-05",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio Hidalgo",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Pachuca",
+    "home_id": 459,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "CF America",
+    "home_translations": {
+      "ru": "Пачука",
+      "ja": "パチューカ",
+      "th": "ซีเอฟ ปาชูการ์",
+      "it": "CF Pachuca",
+      "bg": "Пачука",
+      "el": "Πατσούκα",
+      "ar": "باتشوكا",
+      "ko": "파추카",
+      "de": "CF Pachuca",
+      "es": "Pachuca FC",
+      "fa": "پاچوکا",
+      "sr": "Пачука",
+      "zh": "帕丘卡"
+    },
+    "time": "23:00:00",
+    "away_translations": {
+      "ru": "Америка",
+      "ja": "クラブ アメリカ",
+      "th": "คลับ อเมริกา",
+      "bg": "Америка",
+      "el": "Αμέρικα",
+      "ar": "أميريكا",
+      "ko": "클럽 아메리카",
+      "de": "Club América",
+      "es": "Club América (México)",
+      "fa": "سی اف آمریکا",
+      "ka": "ამერიკა",
+      "lt": "América",
+      "sr": "Америка",
+      "zh": "阿美利加會"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 1067,
+    "id": 1746504,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=459&team2_id=1067"
+  },
+  {
+    "round": "14",
+    "date": "2025-04-06",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio Alfonso Lastras Ramírez",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Atlético San Luis",
+    "home_id": 3357,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Mazatlan",
+    "home_translations": {
+      "ru": "Атлетико Сан-Луис",
+      "ja": "ｱﾄﾚﾃｨｺ･ｻﾝﾙｲｽ",
+      "hu": "Atl. San Luis",
+      "th": "อเทลทิโก้ วัน ลูวิส",
+      "it": "Atl. San Luis",
+      "bg": "Атл. Сан Луис",
+      "nl": "Atl. San Luis",
+      "el": "Ατλέτικο Σαν Λουίς",
+      "tr": "Atl. San Luis",
+      "pt": "Atl. San Luis",
+      "ro": "Atl. San Luis",
+      "ar": "أتلتيكو سان لويس",
+      "ko": "아틀레티코 산 루이스",
+      "de": "Atlético San Luis",
+      "pl": "Atl. San Luis",
+      "fa": "اتلتیکو سن لوئیس",
+      "sr": "Атлетико Сан Луис",
+      "zh": "聖路易斯競技"
+    },
+    "time": "01:00:00",
+    "away_translations": {
+      "ar": "مازاتلان إف سي",
+      "fr": "Mazatlan",
+      "ru": "Масатлан",
+      "ja": "マサトランFC",
+      "es": "Mazatlan",
+      "bg": "Масатлан ФК",
+      "el": "Μαζατλάν",
+      "ko": "마자틀란 FC",
+      "zh": "馬薩特蘭FC"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 5921,
+    "id": 1746508,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=3357&team2_id=5921"
+  },
+  {
+    "round": "14",
+    "date": "2025-04-06",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio BBVA",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Monterrey",
+    "home_id": 768,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "CD Guadalajara",
+    "home_translations": {
+      "ru": "Монтеррей",
+      "ja": "モンテレイ",
+      "th": "มอนเตอร์เรย์",
+      "it": "CF Monterrey",
+      "bg": "Монтерей",
+      "el": "Μοντερέι",
+      "ar": "مونتيري",
+      "ko": "몬테레이",
+      "de": "CF Monterrey",
+      "fa": "مونتری",
+      "sr": "Монтереј",
+      "zh": "蒙特雷"
+    },
+    "time": "01:05:00",
+    "away_translations": {
+      "fr": "Guadalajara",
+      "ru": "Гвадалахара",
+      "ja": "グアダラハラ・チーバス",
+      "hu": "Guadalajara",
+      "th": "กัวดาลาจาร่า",
+      "it": "CD Guadalajara",
+      "bg": "Чивас Гуадалахара",
+      "nl": "Guadalajara",
+      "el": "Γουαδαλαχάρα",
+      "tr": "Guadalajara",
+      "pt": "Guadalajara",
+      "ro": "Guadalajara",
+      "ar": "غوادالاهارا",
+      "ko": "시바스 과달라하라",
+      "de": "CD Guadalajara",
+      "pl": "Guadalajara",
+      "fa": "گوادالاخارا",
+      "ka": "ჩივას გუადალაჰარა",
+      "sr": "Чивас Гвадалахара",
+      "zh": "哥達拿查拉"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 766,
+    "id": 1746505,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=768&team2_id=766"
+  },
+  {
+    "round": "14",
+    "date": "2025-04-06",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio Azteca",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Cruz Azul",
+    "home_id": 771,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Pumas",
+    "home_translations": {
+      "fr": "Cruz Azul",
+      "ru": "Крус Асул",
+      "ja": "クルス・アスル",
+      "th": "คัส อูล",
+      "it": "Croce Azzurra",
+      "bg": "Крус Асул",
+      "da": "Cruz Azul",
+      "tr": "Cruz Azul",
+      "ro": "Cruz Azul",
+      "et": "Cruz Azul",
+      "pl": "Cruz Azul",
+      "fa": "کروز آزول",
+      "fi": "Cruz Azul",
+      "sk": "Cruz Azul",
+      "sr": "Круз Азул",
+      "cs": "Cruz Azul",
+      "hu": "Cruz Azul",
+      "sv": "Cruz Azul",
+      "hr": "Cruz Azul",
+      "el": "Κρούζ Αζούλ",
+      "pt": "Cruz Azul",
+      "vi": "Cruz Azul",
+      "ar": "كروز أزول",
+      "ko": "크루즈 아즐",
+      "de": "Cruz Azul",
+      "no": "Cruz Azul",
+      "es": "Cruz Azul",
+      "nl": "Cruz Azul",
+      "lt": "Cruz Azul",
+      "zh": "藍十字"
+    },
+    "time": "03:10:00",
+    "away_translations": {
+      "fr": "Club Universidad Nacional",
+      "el": "Πούμας",
+      "hu": "UNAM",
+      "th": "พูมาส",
+      "it": "UNAM Pumas",
+      "bg": "УНАМ Пумас",
+      "nl": "UNAM",
+      "fa": "یونیورسیداد ناسیونال",
+      "tr": "UNAM",
+      "pt": "UNAM",
+      "ro": "UNAM",
+      "ar": "بوماس يونام",
+      "ko": "푸마스 U.N.A.M.",
+      "de": "UNAM Pumas",
+      "es": "Pumas UNAM",
+      "pl": "UNAM",
+      "vi": "U.N.A.M.- Pumas",
+      "ru": "Пумас УНАМ",
+      "sr": "Пумас УНАМ",
+      "zh": "普馬斯"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 779,
+    "id": 1746506,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=771&team2_id=779"
+  },
+  {
+    "round": "14",
+    "date": "2025-04-07",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio Nemesio Díez",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Toluca",
+    "home_id": 1050,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Santos Laguna",
+    "home_translations": {
+      "fr": "Deportivo Toluca",
+      "ru": "Толука",
+      "ja": "トルーカ",
+      "th": "เดอปอร์ติโว่ โตลูก้า เอฟซี",
+      "bg": "Толука",
+      "el": "Τολούκα",
+      "ar": "تولوكا",
+      "ko": "톨루카",
+      "de": "Deportivo Toluca",
+      "es": "FC Toluca",
+      "fa": "تولوکا",
+      "sr": "Депортиво Толука",
+      "zh": "托盧卡"
+    },
+    "time": "00:00:00",
+    "away_translations": {
+      "ar": "سانتوس لاغونا",
+      "ko": "산토스 라구나",
+      "ru": "Сантос Лагуна",
+      "ja": "サントス・ラグナ",
+      "es": "Santos Laguna (Torreón)",
+      "th": "ซานโตส ลากูน่า",
+      "fa": "سانتوس لاگونا",
+      "bg": "Сантос Лагуна",
+      "el": "Σάντος Λαγκούνα",
+      "sr": "Сантос Лагуна",
+      "zh": "拿根亞"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 1464,
+    "id": 1746507,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=1050&team2_id=1464"
+  },
+  {
+    "round": "15",
+    "date": "2025-04-11",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio Caliente",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Tijuana",
+    "home_id": 1465,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Atlético San Luis",
+    "home_translations": {
+      "fr": "Tijuana",
+      "ru": "Тихуана",
+      "ja": "クラブ・ティフアナ",
+      "hu": "Tijuana",
+      "th": "คลับ ทิจูเอน่า",
+      "bg": "Клуб Тихуана",
+      "nl": "Tijuana",
+      "el": "Κλαμπ Τιχουάνα",
+      "tr": "Tijuana",
+      "pt": "Tijuana",
+      "ro": "Tijuana",
+      "ar": "تيخوانا",
+      "ko": "클럽 티화나",
+      "es": "FC Tijuana",
+      "pl": "Tijuana",
+      "fa": "تیخوانا",
+      "zh": "堤華納"
+    },
+    "time": "02:05:00",
+    "away_translations": {
+      "ru": "Атлетико Сан-Луис",
+      "ja": "ｱﾄﾚﾃｨｺ･ｻﾝﾙｲｽ",
+      "hu": "Atl. San Luis",
+      "th": "อเทลทิโก้ วัน ลูวิส",
+      "it": "Atl. San Luis",
+      "bg": "Атл. Сан Луис",
+      "nl": "Atl. San Luis",
+      "el": "Ατλέτικο Σαν Λουίς",
+      "tr": "Atl. San Luis",
+      "pt": "Atl. San Luis",
+      "ro": "Atl. San Luis",
+      "ar": "أتلتيكو سان لويس",
+      "ko": "아틀레티코 산 루이스",
+      "de": "Atlético San Luis",
+      "pl": "Atl. San Luis",
+      "fa": "اتلتیکو سن لوئیس",
+      "sr": "Атлетико Сан Луис",
+      "zh": "聖路易斯競技"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 3357,
+    "id": 1746517,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=1465&team2_id=3357"
+  },
+  {
+    "round": "15",
+    "date": "2025-04-12",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio Victoria",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Necaxa",
+    "home_id": 765,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Pachuca",
+    "home_translations": {
+      "fr": "Club Necaxa",
+      "ru": "Некакса",
+      "ja": "ネカクサ",
+      "th": "นีเคเอ้กซ์",
+      "it": "Club Necaxa",
+      "bg": "Некакса",
+      "el": "Νεκάξα",
+      "ar": "نيكاسا",
+      "ko": "네크사",
+      "de": "Club Necaxa",
+      "fa": "نکاکسا",
+      "sr": "Некакса",
+      "zh": "尼卡沙"
+    },
+    "time": "01:00:00",
+    "away_translations": {
+      "ru": "Пачука",
+      "ja": "パチューカ",
+      "th": "ซีเอฟ ปาชูการ์",
+      "it": "CF Pachuca",
+      "bg": "Пачука",
+      "el": "Πατσούκα",
+      "ar": "باتشوكا",
+      "ko": "파추카",
+      "de": "CF Pachuca",
+      "es": "Pachuca FC",
+      "fa": "پاچوکا",
+      "sr": "Пачука",
+      "zh": "帕丘卡"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 459,
+    "id": 1746509,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=765&team2_id=459"
+  },
+  {
+    "round": "15",
+    "date": "2025-04-12",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio El Encanto",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Mazatlan",
+    "home_id": 5921,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "CD Guadalajara",
+    "home_translations": {
+      "ar": "مازاتلان إف سي",
+      "fr": "Mazatlan",
+      "ru": "Масатлан",
+      "ja": "マサトランFC",
+      "es": "Mazatlan",
+      "bg": "Масатлан ФК",
+      "el": "Μαζατλάν",
+      "ko": "마자틀란 FC",
+      "zh": "馬薩特蘭FC"
+    },
+    "time": "03:05:00",
+    "away_translations": {
+      "fr": "Guadalajara",
+      "ru": "Гвадалахара",
+      "ja": "グアダラハラ・チーバス",
+      "hu": "Guadalajara",
+      "th": "กัวดาลาจาร่า",
+      "it": "CD Guadalajara",
+      "bg": "Чивас Гуадалахара",
+      "nl": "Guadalajara",
+      "el": "Γουαδαλαχάρα",
+      "tr": "Guadalajara",
+      "pt": "Guadalajara",
+      "ro": "Guadalajara",
+      "ar": "غوادالاهارا",
+      "ko": "시바스 과달라하라",
+      "de": "CD Guadalajara",
+      "pl": "Guadalajara",
+      "fa": "گوادالاخارا",
+      "ka": "ჩივას გუადალაჰარა",
+      "sr": "Чивас Гвадалахара",
+      "zh": "哥達拿查拉"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 766,
+    "id": 1746510,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=5921&team2_id=766"
+  },
+  {
+    "round": "15",
+    "date": "2025-04-12",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio Olímpico Universitario",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Pumas",
+    "home_id": 779,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "FC Juarez",
+    "home_translations": {
+      "fr": "Club Universidad Nacional",
+      "el": "Πούμας",
+      "hu": "UNAM",
+      "th": "พูมาส",
+      "it": "UNAM Pumas",
+      "bg": "УНАМ Пумас",
+      "nl": "UNAM",
+      "fa": "یونیورسیداد ناسیونال",
+      "tr": "UNAM",
+      "pt": "UNAM",
+      "ro": "UNAM",
+      "ar": "بوماس يونام",
+      "ko": "푸마스 U.N.A.M.",
+      "de": "UNAM Pumas",
+      "es": "Pumas UNAM",
+      "pl": "UNAM",
+      "vi": "U.N.A.M.- Pumas",
+      "ru": "Пумас УНАМ",
+      "sr": "Пумас УНАМ",
+      "zh": "普馬斯"
+    },
+    "time": "23:00:00",
+    "away_translations": {
+      "fr": "Juarez",
+      "ro": "Juarez",
+      "ja": "フアレス",
+      "hu": "Juarez",
+      "th": "เอฟซี จัวร์อาเรซ",
+      "it": "Juarez",
+      "bg": "Хуарес",
+      "nl": "Juarez",
+      "el": "Χουάρεθ",
+      "tr": "Juarez",
+      "pt": "Juarez",
+      "vi": "Juarez",
+      "ar": "خواريز",
+      "ko": "후아레스",
+      "de": "FC Juárez",
+      "es": "Juárez",
+      "pl": "Juarez",
+      "fa": "جوارز",
+      "ru": "Хуарес",
+      "sr": "Хуарез",
+      "zh": "祖亞雷斯"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 2495,
+    "id": 1746511,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=779&team2_id=2495"
+  },
+  {
+    "round": "15",
+    "date": "2025-04-12",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio León",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Leon",
+    "home_id": 769,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Puebla",
+    "home_translations": {
+      "fr": "Leon",
+      "ru": "Леон",
+      "ja": "クラブレオン",
+      "hu": "Leon",
+      "th": "คลับ ลีออน",
+      "it": "Leon",
+      "bg": "Клуб Леон",
+      "nl": "Leon",
+      "el": "Κλαμπ Λεόν",
+      "tr": "Leon",
+      "pt": "Leon",
+      "ro": "Leon",
+      "ar": "ليون",
+      "ko": "클럽 레온",
+      "de": "Club León",
+      "es": "Leon",
+      "pl": "Leon",
+      "fa": "لئون",
+      "sr": "Леон",
+      "zh": "萊昂"
+    },
+    "time": "23:00:00",
+    "away_translations": {
+      "ru": "Пуэбла",
+      "ja": "プエブラ",
+      "th": "พัฟเบิล เอฟซี",
+      "bg": "Пуебла",
+      "el": "Πουέμπλα",
+      "vi": "CLB Puebla",
+      "ar": "بويبلا",
+      "ko": "푸에블라",
+      "de": "Puebla FC",
+      "es": "Puebla FC",
+      "fa": "پوئبلا سیتی",
+      "sr": "Пуебла",
+      "zh": "普埃布拉"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 456,
+    "id": 1746512,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=769&team2_id=456"
+  },
+  {
+    "round": "15",
+    "date": "2025-04-13",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio Universitario",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Tigres",
+    "home_id": 767,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Monterrey",
+    "home_translations": {
+      "fr": "Tigres de laUANL",
+      "el": "Τιγκρές",
+      "hu": "Tigres",
+      "th": "ทิกรีน",
+      "it": "Tigri UANL",
+      "bg": "Тигрес УАНЛ",
+      "nl": "Tigres",
+      "fa": "تیگرس",
+      "tr": "Tigres",
+      "pt": "Tigres",
+      "ro": "Tigres",
+      "ar": "تيغريس",
+      "ko": "티그레스 데 라 UANL",
+      "de": "UANL Tigres",
+      "es": "Tigres de la UANL (Monterrey)",
+      "pl": "Tigres",
+      "vi": "Tigres",
+      "ru": "Тигрес УАНЛ",
+      "sr": "Тигрес",
+      "zh": "堤格雷斯"
+    },
+    "time": "01:00:00",
+    "away_translations": {
+      "ru": "Монтеррей",
+      "ja": "モンテレイ",
+      "th": "มอนเตอร์เรย์",
+      "it": "CF Monterrey",
+      "bg": "Монтерей",
+      "el": "Μοντερέι",
+      "ar": "مونتيري",
+      "ko": "몬테레이",
+      "de": "CF Monterrey",
+      "fa": "مونتری",
+      "sr": "Монтереј",
+      "zh": "蒙特雷"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 768,
+    "id": 1746513,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=767&team2_id=768"
+  },
+  {
+    "round": "15",
+    "date": "2025-04-13",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio Jalisco",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Atlas",
+    "home_id": 458,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Toluca",
+    "home_translations": {
+      "ar": "أتلاس",
+      "ko": "아틀라스",
+      "de": "Atlas Guadalajara",
+      "ja": "アトラス",
+      "th": "แอตลาส",
+      "fa": "اطلس",
+      "bg": "Атлас",
+      "el": "Άτλας",
+      "ru": "Атлас",
+      "sr": "Атлас",
+      "zh": "阿特拿斯"
+    },
+    "time": "01:05:00",
+    "away_translations": {
+      "fr": "Deportivo Toluca",
+      "ru": "Толука",
+      "ja": "トルーカ",
+      "th": "เดอปอร์ติโว่ โตลูก้า เอฟซี",
+      "bg": "Толука",
+      "el": "Τολούκα",
+      "ar": "تولوكا",
+      "ko": "톨루카",
+      "de": "Deportivo Toluca",
+      "es": "FC Toluca",
+      "fa": "تولوکا",
+      "sr": "Депортиво Толука",
+      "zh": "托盧卡"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 1050,
+    "id": 1746514,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=458&team2_id=1050"
+  },
+  {
+    "round": "15",
+    "date": "2025-04-13",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio Azteca",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "CF America",
+    "home_id": 1067,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Cruz Azul",
+    "home_translations": {
+      "ru": "Америка",
+      "ja": "クラブ アメリカ",
+      "th": "คลับ อเมริกา",
+      "bg": "Америка",
+      "el": "Αμέρικα",
+      "ar": "أميريكا",
+      "ko": "클럽 아메리카",
+      "de": "Club América",
+      "es": "Club América (México)",
+      "fa": "سی اف آمریکا",
+      "ka": "ამერიკა",
+      "lt": "América",
+      "sr": "Америка",
+      "zh": "阿美利加會"
+    },
+    "time": "03:10:00",
+    "away_translations": {
+      "fr": "Cruz Azul",
+      "ru": "Крус Асул",
+      "ja": "クルス・アスル",
+      "th": "คัส อูล",
+      "it": "Croce Azzurra",
+      "bg": "Крус Асул",
+      "da": "Cruz Azul",
+      "tr": "Cruz Azul",
+      "ro": "Cruz Azul",
+      "et": "Cruz Azul",
+      "pl": "Cruz Azul",
+      "fa": "کروز آزول",
+      "fi": "Cruz Azul",
+      "sk": "Cruz Azul",
+      "sr": "Круз Азул",
+      "cs": "Cruz Azul",
+      "hu": "Cruz Azul",
+      "sv": "Cruz Azul",
+      "hr": "Cruz Azul",
+      "el": "Κρούζ Αζούλ",
+      "pt": "Cruz Azul",
+      "vi": "Cruz Azul",
+      "ar": "كروز أزول",
+      "ko": "크루즈 아즐",
+      "de": "Cruz Azul",
+      "no": "Cruz Azul",
+      "es": "Cruz Azul",
+      "nl": "Cruz Azul",
+      "lt": "Cruz Azul",
+      "zh": "藍十字"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 771,
+    "id": 1746515,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=1067&team2_id=771"
+  },
+  {
+    "round": "15",
+    "date": "2025-04-13",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio Corona",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Santos Laguna",
+    "home_id": 1464,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Queretaro FC",
+    "home_translations": {
+      "ar": "سانتوس لاغونا",
+      "ko": "산토스 라구나",
+      "ru": "Сантос Лагуна",
+      "ja": "サントス・ラグナ",
+      "es": "Santos Laguna (Torreón)",
+      "th": "ซานโตส ลากูน่า",
+      "fa": "سانتوس لاگونا",
+      "bg": "Сантос Лагуна",
+      "el": "Σάντος Λαγκούνα",
+      "sr": "Сантос Лагуна",
+      "zh": "拿根亞"
+    },
+    "time": "23:00:00",
+    "away_translations": {
+      "fr": "Queretaro",
+      "ro": "Queretaro",
+      "ja": "ケレタロ",
+      "hu": "Queretaro",
+      "th": "ควานเลสทราโด้ เอฟซี",
+      "bg": "Керетаро",
+      "nl": "Queretaro",
+      "el": "Κερετάρο",
+      "tr": "Queretaro",
+      "pt": "Queretaro",
+      "vi": "Queretaro",
+      "ar": "كويريتارو",
+      "ko": "케레타로",
+      "de": "Querétaro FC",
+      "es": "Querétaro (Santiago de Querétaro)",
+      "pl": "Queretaro",
+      "fa": "کرتارو",
+      "ru": "Куэретаро",
+      "sr": "Керетаро",
+      "zh": "克雷塔羅"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 778,
+    "id": 1746516,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=1464&team2_id=778"
+  },
+  {
+    "round": "16",
+    "date": "2025-04-16",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio Hidalgo",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "Pachuca",
+    "home_id": 459,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Tigres",
+    "home_translations": {
+      "ru": "Пачука",
+      "ja": "パチューカ",
+      "th": "ซีเอฟ ปาชูการ์",
+      "it": "CF Pachuca",
+      "bg": "Пачука",
+      "el": "Πατσούκα",
+      "ar": "باتشوكا",
+      "ko": "파추카",
+      "de": "CF Pachuca",
+      "es": "Pachuca FC",
+      "fa": "پاچوکا",
+      "sr": "Пачука",
+      "zh": "帕丘卡"
+    },
+    "time": "01:00:00",
+    "away_translations": {
+      "fr": "Tigres de laUANL",
+      "el": "Τιγκρές",
+      "hu": "Tigres",
+      "th": "ทิกรีน",
+      "it": "Tigri UANL",
+      "bg": "Тигрес УАНЛ",
+      "nl": "Tigres",
+      "fa": "تیگرس",
+      "tr": "Tigres",
+      "pt": "Tigres",
+      "ro": "Tigres",
+      "ar": "تيغريس",
+      "ko": "티그레스 데 라 UANL",
+      "de": "UANL Tigres",
+      "es": "Tigres de la UANL (Monterrey)",
+      "pl": "Tigres",
+      "vi": "Tigres",
+      "ru": "Тигрес УАНЛ",
+      "sr": "Тигрес",
+      "zh": "堤格雷斯"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 767,
+    "id": 1746518,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=459&team2_id=767"
+  },
+  {
+    "round": "16",
+    "date": "2025-04-16",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio AKRON",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "CD Guadalajara",
+    "home_id": 766,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Puebla",
+    "home_translations": {
+      "fr": "Guadalajara",
+      "ru": "Гвадалахара",
+      "ja": "グアダラハラ・チーバス",
+      "hu": "Guadalajara",
+      "th": "กัวดาลาจาร่า",
+      "it": "CD Guadalajara",
+      "bg": "Чивас Гуадалахара",
+      "nl": "Guadalajara",
+      "el": "Γουαδαλαχάρα",
+      "tr": "Guadalajara",
+      "pt": "Guadalajara",
+      "ro": "Guadalajara",
+      "ar": "غوادالاهارا",
+      "ko": "시바스 과달라하라",
+      "de": "CD Guadalajara",
+      "pl": "Guadalajara",
+      "fa": "گوادالاخارا",
+      "ka": "ჩივას გუადალაჰარა",
+      "sr": "Чивас Гвадалахара",
+      "zh": "哥達拿查拉"
+    },
+    "time": "01:05:00",
+    "away_translations": {
+      "ru": "Пуэбла",
+      "ja": "プエブラ",
+      "th": "พัฟเบิล เอฟซี",
+      "bg": "Пуебла",
+      "el": "Πουέμπλα",
+      "vi": "CLB Puebla",
+      "ar": "بويبلا",
+      "ko": "푸에블라",
+      "de": "Puebla FC",
+      "es": "Puebla FC",
+      "fa": "پوئبلا سیتی",
+      "sr": "Пуебла",
+      "zh": "普埃布拉"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 456,
+    "id": 1746519,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=766&team2_id=456"
+  },
+  {
+    "round": "16",
+    "date": "2025-04-16",
+    "league": {
+      "id": null,
+      "name": null,
+      "country_id": null
+    },
+    "location": "Estadio Olímpico Benito Juárez",
+    "competition_id": 45,
+    "odds": {
+      "pre": {
+        "1": null,
+        "2": null,
+        "X": null
+      },
+      "live": {
+        "1": null,
+        "2": null,
+        "X": null
+      }
+    },
+    "home_name": "FC Juarez",
+    "home_id": 2495,
+    "league_id": 0,
+    "group_id": 0,
+    "away_name": "Necaxa",
+    "home_translations": {
+      "fr": "Juarez",
+      "ro": "Juarez",
+      "ja": "フアレス",
+      "hu": "Juarez",
+      "th": "เอฟซี จัวร์อาเรซ",
+      "it": "Juarez",
+      "bg": "Хуарес",
+      "nl": "Juarez",
+      "el": "Χουάρεθ",
+      "tr": "Juarez",
+      "pt": "Juarez",
+      "vi": "Juarez",
+      "ar": "خواريز",
+      "ko": "후아레스",
+      "de": "FC Juárez",
+      "es": "Juárez",
+      "pl": "Juarez",
+      "fa": "جوارز",
+      "ru": "Хуарес",
+      "sr": "Хуарез",
+      "zh": "祖亞雷斯"
+    },
+    "time": "03:00:00",
+    "away_translations": {
+      "fr": "Club Necaxa",
+      "ru": "Некакса",
+      "ja": "ネカクサ",
+      "th": "นีเคเอ้กซ์",
+      "it": "Club Necaxa",
+      "bg": "Некакса",
+      "el": "Νεκάξα",
+      "ar": "نيكاسا",
+      "ko": "네크사",
+      "de": "Club Necaxa",
+      "fa": "نکاکسا",
+      "sr": "Некакса",
+      "zh": "尼卡沙"
+    },
+    "competition": {
+      "id": 45,
+      "name": "Liga MX"
+    },
+    "away_id": 765,
+    "id": 1746521,
+    "h2h": "https://livescore-api.com/api-client/teams/head2head.json?key=ffzVfpbpm1R8Xfgc&secret=0kD5SHLJlkljEcjUrSPGi05E1WNZc3cc&team1_id=2495&team2_id=765"
+  }
+]

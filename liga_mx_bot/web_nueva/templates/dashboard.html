@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+
+{% block title %}Liga MX Bot - Dashboard{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="dashboard-container">
+    <div class="dashboard-header">
+        <h2>Dashboard de Monitoreo</h2>
+        <div class="time-info">
+            <span id="current-date">{{ current_date }}</span>
+            <span id="current-time">{{ current_time }}</span>
+        </div>
+        <button id="refresh-dashboard" class="refresh-btn">
+            <i class="fas fa-sync-alt"></i> Actualizar
+        </button>
+    </div>
+
+    <div class="dashboard-grid">
+        
+        <!-- Monitoreo del Sistema -->
+        <div class="metrics-section" data-component-name="<div />">
+            <h2 data-component-name="<h2 />">Monitoreo del Sistema</h2>
+            <div class="system-metrics-grid">
+                <div class="metric-card" data-component-name="<div />">
+                    <div class="metric-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="metric-value" id="api-calls">19</div>
+                    <div class="metric-label" data-component-name="<div />">Llamadas API Totales</div>
+                </div>
+                
+                <div class="metric-card" data-component-name="<div />">
+                    <div class="metric-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="metric-value" id="success-rate">100%</div>
+                    <div class="metric-label" data-component-name="<div />">Tasa de Éxito</div>
+                </div>
+                
+                <div class="metric-card" data-component-name="<div />">
+                    <div class="metric-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="metric-value" id="response-time">718ms</div>
+                    <div class="metric-label" data-component-name="<div />">Tiempo de Respuesta Promedio</div>
+                </div>
+                
+                <div class="metric-card" data-component-name="<div />">
+                    <div class="metric-icon">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <div class="metric-value" id="api-errors">0</div>
+                    <div class="metric-label">Errores Totales</div>
+                </div>
+                
+                <div class="metric-card" data-component-name="<div />">
+                    <div class="metric-icon">
+                        <i class="fas fa-power-off"></i>
+                    </div>
+                    <div class="metric-value" id="uptime">9m</div>
+                    <div class="metric-label">Tiempo Activo</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Gráficas de métricas del sistema -->
+        <div class="dashboard-panel system-metrics-charts">
+            <div class="chart-row">
+                <div class="chart-container">
+                    <canvas id="api-calls-chart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="success-rate-chart"></canvas>
+                </div>
+            </div>
+            <div class="chart-row">
+                <div class="chart-container">
+                    <canvas id="response-time-chart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="errors-chart"></canvas>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Logs del sistema -->
+        <div class="dashboard-panel system-logs">
+            <h3>Logs del Sistema</h3>
+            <div class="log-controls">
+                <select id="log-level-filter">
+                    <option value="all">Todos los niveles</option>
+                    <option value="info">Info</option>
+                    <option value="warning">Warning</option>
+                    <option value="error">Error</option>
+                </select>
+                <button id="clear-logs" class="clear-btn">
+                    <i class="fas fa-trash"></i> Limpiar
+                </button>
+            </div>
+            <div class="logs-container" id="logs-container">
+                <div class="loading-indicator">
+                    <i class="fas fa-spinner fa-spin"></i> Cargando logs...
+                </div>
+            </div>
+        </div>
+        
+        <!-- Alertas del sistema -->
+        <div class="dashboard-panel system-alerts">
+            <h3>Alertas</h3>
+            <div class="alerts-container" id="alerts-container">
+                <div class="alert info">
+                    <div class="alert-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <div class="alert-content">
+                        <div class="alert-title">Sistema Operativo</div>
+                        <div class="alert-message">El sistema está funcionando correctamente.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+{% endblock %}
