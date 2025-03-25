@@ -8,14 +8,14 @@ import pytz
 from typing import Dict, List, Any, Set, Optional
 import time
 
-from config import (
+from core.config import (
     LIVESCORE_API_KEY,
     LIVESCORE_API_SECRET,
     LIGA_MX_COMPETITION_ID
 )
-from livescore_client import LiveScoreClient
-from telegram_client import TelegramClient
-from formatter import MatchFormatter
+from core.livescore_client import LiveScoreClient
+from core.telegram_client import TelegramClient
+from core.formatter import MatchFormatter
 
 # Configurar logging
 logging.basicConfig(

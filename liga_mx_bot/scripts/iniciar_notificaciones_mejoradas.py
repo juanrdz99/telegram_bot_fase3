@@ -28,8 +28,8 @@ def signal_handler(sig, frame):
     logger.info("Recibida señal de interrupción, deteniendo el programa...")
     running = False
 
-async def main():
-    """Función principal"""
+async def run_enhanced_notifications():
+    """Función para iniciar las notificaciones mejoradas desde otro script"""
     global running
     
     # Registrar manejador de señales
@@ -58,22 +58,16 @@ async def main():
         
         # Bucle principal
         while running:
-            # Verificar próximos partidos
+            # Esperar el intervalo de verificación
+            await asyncio.sleep(check_interval)
+            
+            # Verificar partidos próximos y en vivo
             await tracker.check_upcoming_matches()
-            
-            # Verificar partidos en vivo
             await tracker.check_live_matches()
-            
-            # Esperar antes de la próxima verificación
-            for _ in range(check_interval):
-                if not running:
-                    break
-                await asyncio.sleep(1)
-                
-    except KeyboardInterrupt:
-        logger.info("Interrupción de teclado detectada, deteniendo el programa...")
+    
     except Exception as e:
         logger.error(f"Error en el bucle principal: {e}")
+    
     finally:
         logger.info("Sistema de notificaciones detenido")
         print("\n")
@@ -82,9 +76,13 @@ async def main():
         print("=" * 80)
         print("\n")
 
+async def main():
+    """Función principal"""
+    await run_enhanced_notifications()
+
 if __name__ == "__main__":
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
         logger.info("Programa detenido por el usuario")
-    sys.exit(0)
+    sys.exit(0)  

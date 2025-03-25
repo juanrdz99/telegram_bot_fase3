@@ -21,9 +21,12 @@ LIVESCORE_MATCH_DETAILS_ENDPOINT = f"{LIVESCORE_BASE_URL}/scores/match.json"
 LIVESCORE_EVENTS_ENDPOINT = f"{LIVESCORE_BASE_URL}/scores/events.json"
 LIVESCORE_STATISTICS_ENDPOINT = f"{LIVESCORE_BASE_URL}/scores/statistics.json"
 LIVESCORE_LEAGUE_TABLE_ENDPOINT = f"{LIVESCORE_BASE_URL}/leagues/table.json"
+LIVESCORE_HISTORY_ENDPOINT = f"{LIVESCORE_BASE_URL}/scores/history.json"
+LIVESCORE_TOPSCORERS_ENDPOINT = f"{LIVESCORE_BASE_URL}/competitions/topscorers.json"
 
 # Liga MX Competition ID
 LIGA_MX_COMPETITION_ID = "45"  # Found using find_competition_id.py
+LIGA_MX_GROUP_ID = "3420"  # Group ID for Liga MX standings
 
 # Update frequency in seconds
 UPDATE_INTERVAL = 30

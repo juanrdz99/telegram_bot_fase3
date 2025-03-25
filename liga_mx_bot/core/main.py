@@ -97,6 +97,50 @@ class LigaMXBot:
         except Exception as e:
             logger.error(f"Error checking for match updates: {e}")
 
+    async def send_standings(self) -> None:
+        """Send current Liga MX standings to Telegram"""
+        logger.info("Sending Liga MX standings...")
+        
+        try:
+            # Get the league table
+            standings = self.livescore_client.get_league_table()
+            
+            if not standings:
+                logger.warning("Failed to get Liga MX standings")
+                return
+            
+            # Format the standings message
+            message = self.formatter.format_standings(standings)
+            
+            # Send the message to Telegram
+            await self.telegram_client.send_message(message)
+            logger.info("Standings message sent successfully")
+            
+        except Exception as e:
+            logger.error(f"Error sending standings: {e}")
+    
+    async def send_top_scorers(self) -> None:
+        """Send Liga MX top scorers to Telegram"""
+        logger.info("Sending Liga MX top scorers...")
+        
+        try:
+            # Get the top scorers
+            scorers = self.livescore_client.get_top_scorers()
+            
+            if not scorers:
+                logger.warning("Failed to get Liga MX top scorers")
+                return
+            
+            # Format the top scorers message
+            message = self.formatter.format_top_scorers(scorers)
+            
+            # Send the message to Telegram
+            await self.telegram_client.send_message(message)
+            logger.info("Top scorers message sent successfully")
+            
+        except Exception as e:
+            logger.error(f"Error sending top scorers: {e}")
+
     async def start(self) -> None:
         """Start the Liga MX Bot"""
         logger.info("Starting Liga MX Bot...")
@@ -121,99 +165,22 @@ class LigaMXBot:
             self.scheduler.shutdown()
 
 
-async def test_bot() -> None:
-    """Test the bot by sending a sample message"""
-    logger.info("Testing bot...")
-    
-    # Create clients
-    livescore_client = LiveScoreClient()
-    telegram_client = TelegramClient()
-    formatter = MatchFormatter()
-    
-    # Create a sample match update
-    sample_match = {
-        "competition": {"name": "Liga MX"},
-        "round": {"name": "Jornada 10"},
-        "venue": {"name": "Estadio Azteca"},
-        "home_name": "Club América",
-        "away_name": "Guadalajara",
-        "score": "2-1",
-        "status": "IN_PLAY",
-        "minute": "75"
-    }
-    
-    sample_events = [
-        {
-            "id": "1",
-            "type": "goal",
-            "minute": "23",
-            "player": "Henry Martín",
-            "home_away": "h"
-        },
-        {
-            "id": "2",
-            "type": "goal",
-            "minute": "45",
-            "player": "Alexis Vega",
-            "home_away": "a"
-        },
-        {
-            "id": "3",
-            "type": "goal",
-            "minute": "67",
-            "player": "Richard Sánchez",
-            "home_away": "h"
-        },
-        {
-            "id": "4",
-            "type": "yellowcard",
-            "minute": "34",
-            "player": "Fernando Beltrán",
-            "home_away": "a"
-        },
-        {
-            "id": "5",
-            "type": "substitution",
-            "minute": "60",
-            "player": "Álvaro Fidalgo",
-            "player_in": "Jonathan dos Santos",
-            "home_away": "h"
-        }
-    ]
-    
-    sample_statistics = {
-        "possession": {"home": "58", "away": "42"},
-        "shots_on_target": {"home": "7", "away": "3"},
-        "corners": {"home": "5", "away": "2"}
-    }
-    
-    # Format the message
-    message = formatter.format_match_update(
-        sample_match,
-        sample_events,
-        sample_statistics
-    )
-    
-    # Send the message to Telegram
-    success = await telegram_client.send_message(message)
-    
-    if success:
-        logger.info("Test message sent successfully")
-    else:
-        logger.error("Failed to send test message")
-
-
 if __name__ == "__main__":
     import argparse
     
     parser = argparse.ArgumentParser(description="Liga MX Telegram Bot")
-    parser.add_argument("--test", action="store_true", help="Send a test message and exit")
+    parser.add_argument("--standings", action="store_true", help="Send current standings and exit")
+    parser.add_argument("--scorers", action="store_true", help="Send top scorers and exit")
     args = parser.parse_args()
     
-    if args.test:
-        # Run the test
-        asyncio.run(test_bot())
+    bot = LigaMXBot()
+    
+    if args.standings:
+        # Send standings and exit
+        asyncio.run(bot.send_standings())
+    elif args.scorers:
+        # Send top scorers and exit
+        asyncio.run(bot.send_top_scorers())
     else:
         # Start the bot
-        bot = LigaMXBot()
         asyncio.run(bot.start())

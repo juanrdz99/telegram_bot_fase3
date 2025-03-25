@@ -9,12 +9,15 @@ from core.config import (
     LIVESCORE_API_KEY, 
     LIVESCORE_API_SECRET, 
     LIGA_MX_COMPETITION_ID,
+    LIGA_MX_GROUP_ID,
     LIVESCORE_MATCHES_ENDPOINT,
     LIVESCORE_FIXTURES_ENDPOINT,
     LIVESCORE_MATCH_DETAILS_ENDPOINT,
     LIVESCORE_EVENTS_ENDPOINT,
     LIVESCORE_STATISTICS_ENDPOINT,
-    LIVESCORE_LEAGUE_TABLE_ENDPOINT
+    LIVESCORE_LEAGUE_TABLE_ENDPOINT,
+    LIVESCORE_HISTORY_ENDPOINT,
+    LIVESCORE_TOPSCORERS_ENDPOINT
 )
 
 # Configure logging
@@ -239,12 +242,12 @@ class LiveScoreClient:
             "key": self.api_key,
             "secret": self.api_secret,
             "competition_id": competition_id,
-            "season": "Clausura 2025"  # Especificar la temporada actual
+            "group_id": LIGA_MX_GROUP_ID  # Use the group ID for Liga MX standings
         }
         
         try:
             # Make the request
-            logger.info(f"Requesting league table for competition {competition_id}, season Clausura 2025")
+            logger.info(f"Requesting league table for competition {competition_id}, group {LIGA_MX_GROUP_ID}")
             response = requests.get(url, params=params)
             response.raise_for_status()
             data = response.json()
@@ -260,12 +263,6 @@ class LiveScoreClient:
                 # Process and format the table data to match the expected format
                 formatted_table = []
                 for team in table:
-                    # Verificar que los partidos jugados no excedan el número de jornadas actuales
-                    matches_played = team.get("matches_total", team.get("played", 0))
-                    if matches_played > 12:  # Ajustar al número actual de jornadas
-                        logger.warning(f"Datos inconsistentes: {team.get('name', 'Equipo desconocido')} muestra {matches_played} partidos jugados pero solo van 12 jornadas")
-                        # Podríamos ajustar los datos aquí si es necesario
-                    
                     # Extract team data and ensure all required fields are present
                     team_data = {
                         "name": team.get("name", ""),
@@ -286,6 +283,84 @@ class LiveScoreClient:
                 error_msg = data.get("error", "Unknown error")
                 logger.error(f"Error getting league table: {error_msg}")
                 logger.error(f"Full response: {data}")
+                return []
+        except Exception as e:
+            logger.error(f"Error making request to LiveScore API: {e}")
+            return []
+    
+    def get_match_history(self, competition_id: str = LIGA_MX_COMPETITION_ID, page: int = 1) -> List[Dict[str, Any]]:
+        """Get match history for a competition
+
+        Args:
+            competition_id: Competition ID
+            page: Page number for pagination
+
+        Returns:
+            List of historical matches
+        """
+        # Build URL for the request
+        url = LIVESCORE_HISTORY_ENDPOINT
+        
+        # Build parameters
+        params = {
+            "key": self.api_key,
+            "secret": self.api_secret,
+            "competition_id": competition_id,
+            "page": page
+        }
+        
+        try:
+            # Make the request
+            logger.info(f"Requesting match history for competition {competition_id}, page {page}")
+            response = requests.get(url, params=params)
+            response.raise_for_status()
+            data = response.json()
+            
+            if data.get("success") and "data" in data:
+                matches = data["data"].get("match", [])
+                logger.info(f"Successfully retrieved {len(matches)} historical matches")
+                return matches
+            else:
+                error_msg = data.get("error", "Unknown error")
+                logger.error(f"Error getting match history: {error_msg}")
+                return []
+        except Exception as e:
+            logger.error(f"Error making request to LiveScore API: {e}")
+            return []
+    
+    def get_top_scorers(self, competition_id: str = LIGA_MX_COMPETITION_ID) -> List[Dict[str, Any]]:
+        """Get top scorers for a competition
+
+        Args:
+            competition_id: Competition ID
+
+        Returns:
+            List of top scorers
+        """
+        # Build URL for the request
+        url = LIVESCORE_TOPSCORERS_ENDPOINT
+        
+        # Build parameters
+        params = {
+            "key": self.api_key,
+            "secret": self.api_secret,
+            "competition_id": competition_id
+        }
+        
+        try:
+            # Make the request
+            logger.info(f"Requesting top scorers for competition {competition_id}")
+            response = requests.get(url, params=params)
+            response.raise_for_status()
+            data = response.json()
+            
+            if data.get("success") and "data" in data:
+                scorers = data["data"].get("topscorers", [])
+                logger.info(f"Successfully retrieved {len(scorers)} top scorers")
+                return scorers
+            else:
+                error_msg = data.get("error", "Unknown error")
+                logger.error(f"Error getting top scorers: {error_msg}")
                 return []
         except Exception as e:
             logger.error(f"Error making request to LiveScore API: {e}")

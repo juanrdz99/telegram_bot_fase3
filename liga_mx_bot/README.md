@@ -7,7 +7,8 @@ Bot de Telegram para notificaciones en tiempo real de partidos de la Liga MX usa
 - Notificaciones en tiempo real de partidos de Liga MX
 - Actualizaciones de goles, tarjetas, sustituciones y estadísticas
 - Notificaciones de inicio, medio tiempo y final de partido
-- Opciones para notificar partidos de toda la semana, solo fin de semana o jornada actual
+- Tabla de posiciones y lista de goleadores
+- Notificaciones de próximos partidos
 
 ## Estructura del Proyecto
 
@@ -33,7 +34,8 @@ liga_mx_bot/
 │   └── liga_mx_matches.json # Datos de partidos
 ├── utils/                  # Utilidades adicionales
 ├── .gitignore              # Archivos ignorados por git
-└── requirements.txt        # Dependencias del proyecto
+├── requirements.txt        # Dependencias del proyecto
+└── run_bot.py              # Script unificado para ejecutar el bot
 ```
 
 ## Configuración de Credenciales
@@ -52,7 +54,30 @@ LIGA_MX_COMPETITION_ID=45
 
 ## Uso
 
-### Notificar partidos
+### Script Unificado (Recomendado)
+
+Ahora puedes usar el script unificado `run_bot.py` para todas las funcionalidades del bot:
+
+```bash
+# Mostrar ayuda y opciones disponibles
+python run_bot.py --help
+
+# Enviar tabla de posiciones actual
+python run_bot.py --standings
+
+# Enviar goleadores actuales
+python run_bot.py --scorers
+
+# Enviar próximos partidos
+python run_bot.py --upcoming
+
+# Iniciar notificaciones en tiempo real
+python run_bot.py --notifications
+```
+
+### Scripts Individuales (Alternativa)
+
+#### Notificar partidos
 
 ```bash
 # Notificar partidos de toda la semana
@@ -65,7 +90,7 @@ python scripts/notificar_partidos.py --tipo finde
 python scripts/notificar_partidos.py --tipo jornada
 ```
 
-### Iniciar notificaciones en tiempo real
+#### Iniciar notificaciones en tiempo real
 
 ```bash
 python scripts/iniciar_notificaciones_mejoradas.py
@@ -88,8 +113,10 @@ python tests/test_partido_pasado.py
 
 - Python 3.6+
 - requests
+- python-telegram-bot
+- python-dotenv
+- apscheduler
 - pytz
-- asyncio
 
 Instalar dependencias:
 
@@ -102,3 +129,4 @@ pip install -r requirements.txt
 - Todas las fechas y horas se muestran en la zona horaria de México (Ciudad de México)
 - Las notificaciones se envían en español
 - El bot monitorea partidos en vivo cada 30 segundos
+- Para una mejor experiencia, se recomienda usar el script unificado `run_bot.py`

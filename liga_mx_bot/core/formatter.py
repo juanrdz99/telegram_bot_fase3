@@ -549,3 +549,106 @@ class MatchFormatter:
         """
         
         return message
+
+    @staticmethod
+    def format_standings(standings: List[Dict[str, Any]]) -> str:
+        if not standings:
+            return "⚠️ No hay datos disponibles de la tabla de posiciones."
+
+        header = "🏆 *TABLA DE POSICIONES LIGA MX*\n\n"
+        table_header = "  Pos  |     Equipo           | PJ | G | E | P | Pts\n"
+        table_header += "--------|-----------------------|----|----|---|----|-----\n"
+
+        table_rows = ""
+        for i, team in enumerate(standings):
+            pos = i + 1
+            emoji = "🟢" if pos <= 4 else "🟡" if pos <= 12 else ""
+
+            # 👉 Ajuste de posición: agregar espacio extra en 1-9
+            if pos < 10:
+                pos_str = f"{pos}  {emoji} ".ljust(4)
+            else:
+                pos_str = f"{pos}{emoji}".ljust(4)
+
+            name = team.get('name', '')
+
+            # Ajustes visuales para alinear los equipos
+            equipo_ajustado = {
+                "América": "América            ",
+                "León": "León                  ",
+                "Tigres UANL": "Tigres UANL    ",
+                "Toluca": "Toluca               ",
+                "Cruz Azul": "Cruz Azul          ",
+                "Necaxa": "Necaxa              ",
+                "Pachuca": "Pachuca            ",
+                "Monterrey": "Monterrey       ",
+                "Juárez": "Juárez                ",
+                "Guadalajara": "Guadalajara    ",
+                "Pumas UNAM": "Pumas UNAM",
+                "Mazatlán": "Mazatlán         ",
+                "Atlas": "Atlas                       ",
+                "Querétaro": "Querétaro            ",
+                "Atlético San Luis": "Atlético S. Luis    ",
+                "Puebla": "Puebla                   ",
+                "Santos Laguna": "Santos Laguna   ",
+                "Tijuana": "Tijuana                  "
+            }.get(name, name.ljust(18))
+
+            row = (
+                f"{pos_str}| {equipo_ajustado}| "
+                f"{str(team.get('played', 0)).rjust(2)} | "
+                f"{str(team.get('won', 0)).rjust(2)} | "
+                f"{str(team.get('drawn', 0)).rjust(2)} | "
+                f"{str(team.get('lost', 0)).rjust(2)} | "
+                f"{str(team.get('points', 0)).rjust(3)}\n"
+            )
+            table_rows += row
+
+        footer = "\n🟢 Clasificación directa a liguilla\n🟡 Play-in\n"
+        now = datetime.now(MEXICO_TZ)
+        timestamp = f"\n📊 Actualizado: {now.strftime('%d/%m/%Y %H:%M')} (CDMX)"
+
+        return header + table_header + table_rows + footer + timestamp
+
+    @staticmethod
+    def format_top_scorers(scorers: List[Dict[str, Any]]) -> str:
+        if not scorers:
+            return "⚠️ No hay datos disponibles de los goleadores."
+
+        header = "⚽ *GOLEADORES LIGA MX*\n\n"
+        table_header = "  Pos  |            Jugador           |         Equipo         | Goles\n"
+        table_header += "--------|-----------------------------|------------------------|-----------\n"
+
+        table_rows = ""
+        for i, scorer in enumerate(scorers[:3]):
+            pos = i + 1
+            medals = {1: "🥇", 2: "🥈", 3: "🥉"}
+            pos_str = f"{pos}{medals.get(pos, '')}".ljust(3)
+
+            name = scorer.get("player", {}).get("name", "")
+            team = scorer.get("team", {}).get("name", "")
+            goals = scorer.get("goals", 0)
+
+            # Ajustes manuales según el jugador
+            if name == "Paulinho":
+                name = "          Paulinho          "
+            elif name == "German Berterame":
+                name = "German Berterame"
+            elif name == "Sergio Canales":
+                name = "     Sergio Canales    "
+
+            # Ajustes manuales de equipo (alineación visual)
+            if team == "Toluca":
+                team = "          Toluca        "
+            elif team == "Monterrey":
+                team = "      Monterrey    " 
+
+            row = f"{pos_str} | {name}| {team.ljust(17)}| {str(goals).rjust(5)}\n"
+            table_rows += row
+
+        now = datetime.now(MEXICO_TZ)
+        timestamp = f"\n📊 Actualizado: {now.strftime('%d/%m/%Y %H:%M')} (CDMX)"
+
+        return header + table_header + table_rows + timestamp
+
+

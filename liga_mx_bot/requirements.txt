@@ -2,9 +2,5 @@ requests==2.31.0
 python-telegram-bot==20.7
 python-dotenv==1.0.0
 apscheduler==3.10.4
-flask==2.0.1
-prometheus-client==0.16.0
-structlog==23.1.0
 pytz==2023.3
 pyyaml==6.0
-grafana-api-client==2.0.0
