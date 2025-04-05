@@ -161,6 +161,7 @@ class EnhancedMatchTracker:
                         logger.warning(f"No se pudieron obtener detalles para el partido {match_id}, omitiendo...")
                         continue
                     
+                    # Obtener eventos y estadísticas (con manejo de errores)
                     match_events = self.livescore_client.get_match_events(match_id)
                     match_statistics = self.livescore_client.get_match_statistics(match_id)
                     
@@ -210,34 +211,38 @@ class EnhancedMatchTracker:
             events: Eventos del partido de la API de LiveScore
             statistics: Estadísticas del partido de la API de LiveScore
         """
-        # Crear un nuevo estado para el partido
-        new_state = {
-            "score": match_details.get("score", "0-0"),
-            "status": match_details.get("status", ""),
-            "minute": match_details.get("minute", ""),
+        # Si es la primera vez que vemos este partido, guardar su estado inicial
+        if match_id not in self.match_states:
+            logger.info(f"Nuevo partido detectado: {match_id}")
+            self.match_states[match_id] = {
+                "details": match_details,
+                "events": events,
+                "statistics": statistics
+            }
+            return
+        
+        # Obtener estado anterior
+        prev_state = self.match_states[match_id]
+        prev_details = prev_state.get("details", {})
+        prev_events = prev_state.get("events", [])
+        
+        # Actualizar estado
+        self.match_states[match_id] = {
+            "details": match_details,
             "events": events,
             "statistics": statistics
         }
         
-        # Verificar si es un partido nuevo
-        if match_id not in self.match_states:
-            logger.info(f"Nuevo partido detectado: {match_id}")
-            self.match_states[match_id] = new_state
-            return
-        
-        # Obtener el estado anterior
-        prev_state = self.match_states[match_id]
-        
         # Verificar cambios en la puntuación
-        if prev_state["score"] != new_state["score"]:
-            logger.info(f"Cambio de puntuación detectado en partido {match_id}")
-            await self._send_score_change_notification(match_details, new_state["score"], prev_state["score"])
+        prev_score = prev_details.get("score", "0-0")
+        new_score = match_details.get("score", "0-0")
+        
+        if prev_score != new_score:
+            logger.info(f"Cambio de puntuación detectado: {prev_score} -> {new_score}")
+            await self._send_score_change_notification(match_details, new_score, prev_score)
         
         # Verificar nuevos eventos
-        await self._check_new_events(match_id, match_details, prev_state["events"], new_state["events"])
-        
-        # Actualizar el estado
-        self.match_states[match_id] = new_state
+        await self._check_new_events(match_id, match_details, prev_events, events)
 
     async def _check_new_events(
         self,
@@ -254,27 +259,36 @@ class EnhancedMatchTracker:
             prev_events: Eventos anteriores
             new_events: Eventos nuevos
         """
-        # Obtener IDs de eventos anteriores
-        prev_event_ids = {str(event.get("id", "")) for event in prev_events if event.get("id")}
-        
-        # Verificar cada nuevo evento
-        for event in new_events:
-            event_id = str(event.get("id", "")) if event.get("id") else ""
+        # Si no hay eventos, no hay nada que verificar
+        if not new_events:
+            return
             
-            # Si es un evento nuevo y no ha sido notificado
-            if event_id and event_id not in prev_event_ids and event_id not in self.notified_matches["events"]:
-                event_type = event.get("type", "")
+        # Crear conjuntos de IDs de eventos para comparación rápida
+        prev_event_ids = {e.get("id") for e in prev_events if e.get("id")}
+        
+        # Verificar cada evento nuevo
+        for event in new_events:
+            event_id = event.get("id")
+            
+            # Si el evento no tiene ID o ya lo hemos visto, omitirlo
+            if not event_id or event_id in prev_event_ids or event_id in self.notified_matches["events"]:
+                continue
                 
-                # Enviar notificación según el tipo de evento
+            # Marcar el evento como notificado
+            self.notified_matches["events"].add(event_id)
+            
+            # Determinar el tipo de evento y enviar la notificación correspondiente
+            event_type = event.get("type", "")
+            
+            try:
                 if event_type == "goal":
                     await self._send_goal_notification(match_details, event)
                 elif event_type in ["yellowcard", "redcard"]:
                     await self._send_card_notification(match_details, event)
                 elif event_type == "substitution":
                     await self._send_substitution_notification(match_details, event)
-                
-                # Marcar evento como notificado
-                self.notified_matches["events"].add(event_id)
+            except Exception as e:
+                logger.error(f"Error al enviar notificación de evento {event_type}: {e}")
 
     async def _send_pre_match_notification(self, match: Dict[str, Any]) -> None:
         """Enviar notificación 1 hora antes del partido
@@ -334,36 +348,29 @@ class EnhancedMatchTracker:
             match_details: Detalles del partido
             statistics: Estadísticas del partido
         """
-        home_team = match_details.get("home_name", "")
-        away_team = match_details.get("away_name", "")
+        # Extraer información del partido
+        home_team = match_details.get("home_name", "Equipo Local")
+        away_team = match_details.get("away_name", "Equipo Visitante")
         score = match_details.get("score", "0-0")
         
+        # Formatear mensaje
         message = (
             f"⏱️ <b>MEDIO TIEMPO</b> ⏱️\n\n"
-            f"⚽️ {home_team} {score} {away_team}\n\n"
+            f"⚽ {home_team} {score} {away_team}\n\n"
         )
         
-        # Agregar estadísticas
-        if statistics:
-            # Extraer estadísticas
-            possession_home = statistics.get("possession", {}).get("home", "0")
-            possession_away = statistics.get("possession", {}).get("away", "0")
-            
-            shots_on_target_home = statistics.get("shots_on_target", {}).get("home", "0")
-            shots_on_target_away = statistics.get("shots_on_target", {}).get("away", "0")
-            
-            corners_home = statistics.get("corners", {}).get("home", "0")
-            corners_away = statistics.get("corners", {}).get("away", "0")
-            
-            message += (
-                f"📊 <b>Estadísticas:</b>\n"
-                f"Posesión: {home_team} {possession_home}% - {possession_away}% {away_team}\n"
-                f"Tiros a puerta: {home_team} {shots_on_target_home} - {shots_on_target_away} {away_team}\n"
-                f"Corners: {home_team} {corners_home} - {corners_away} {away_team}\n"
-            )
+        # Agregar estadísticas si están disponibles
+        if statistics and "statistics" in statistics:
+            message += "<b>📊 Estadísticas del primer tiempo:</b>\n"
+            for stat in statistics.get("statistics", []):
+                stat_type = stat.get("type", "")
+                home_value = stat.get("home", "0")
+                away_value = stat.get("away", "0")
+                message += f"{stat_type}: {home_value} - {away_value}\n"
         
+        # Enviar mensaje
         await self.telegram_client.send_message(message)
-        logger.info(f"Notificación medio tiempo enviada: {home_team} vs {away_team}")
+        logger.info(f"Notificación de medio tiempo enviada: {home_team} vs {away_team}")
 
     async def _send_match_end_notification(
         self,
@@ -378,17 +385,40 @@ class EnhancedMatchTracker:
             events: Eventos del partido
             statistics: Estadísticas del partido
         """
-        # Usar el formateador para crear un resumen completo del partido
-        message = self.formatter.format_match_update(match_details, events, statistics)
-        
-        # Agregar encabezado de final del partido
-        home_team = match_details.get("home_name", "")
-        away_team = match_details.get("away_name", "")
+        # Extraer información del partido
+        home_team = match_details.get("home_name", "Equipo Local")
+        away_team = match_details.get("away_name", "Equipo Visitante")
         score = match_details.get("score", "0-0")
         
-        header = f"🏁 <b>FINAL DEL PARTIDO</b> 🏁\n\n"
+        # Formatear mensaje
+        message = (
+            f"🏁 <b>FINAL DEL PARTIDO</b> 🏁\n\n"
+            f"⚽ {home_team} {score} {away_team}\n\n"
+        )
         
-        await self.telegram_client.send_message(header + message)
+        # Agregar goles si hay eventos
+        if events:
+            goals = [e for e in events if e.get("type") == "goal"]
+            if goals:
+                message += "<b>⚽ Goles:</b>\n"
+                for goal in goals:
+                    minute = goal.get("minute", "")
+                    player = goal.get("player", "Jugador desconocido")
+                    team = home_team if goal.get("home_away") == "h" else away_team
+                    message += f"⚽ {minute}' {player} ({team})\n"
+                message += "\n"
+        
+        # Agregar estadísticas si están disponibles
+        if statistics and "statistics" in statistics:
+            message += "<b>📊 Estadísticas:</b>\n"
+            for stat in statistics.get("statistics", []):
+                stat_type = stat.get("type", "")
+                home_value = stat.get("home", "0")
+                away_value = stat.get("away", "0")
+                message += f"{stat_type}: {home_value} - {away_value}\n"
+        
+        # Enviar mensaje
+        await self.telegram_client.send_message(message)
         logger.info(f"Notificación final de partido enviada: {home_team} vs {away_team}")
 
     async def _send_score_change_notification(

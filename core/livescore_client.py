@@ -147,10 +147,59 @@ class LiveScoreClient:
                 logger.info(f"Got details for match {match_id}")
                 return match
             else:
-                logger.error(f"Error getting match details: {data.get('error', 'Unknown error')}")
+                error_msg = data.get("error", "Unknown error")
+                logger.error(f"Error getting match details: {error_msg}")
+                
+                # Si el error es 'Invalid controller specified', intentar con un endpoint alternativo
+                if "Invalid controller specified" in error_msg:
+                    logger.info(f"Intentando obtener detalles del partido {match_id} usando el endpoint de partidos en vivo")
+                    return self._get_match_details_from_live(match_id)
                 return {}
         except Exception as e:
             logger.error(f"Error making request to LiveScore API: {e}")
+            return {}
+    
+    def _get_match_details_from_live(self, match_id: str) -> Dict[str, Any]:
+        """Obtener detalles del partido desde el endpoint de partidos en vivo
+        
+        Args:
+            match_id: ID del partido
+            
+        Returns:
+            Detalles del partido
+        """
+        # Construir URL para la solicitud
+        url = LIVESCORE_MATCHES_ENDPOINT
+        
+        # Construir parámetros
+        params = {
+            "key": self.api_key,
+            "secret": self.api_secret,
+            "id": match_id
+        }
+        
+        try:
+            # Hacer la solicitud
+            response = requests.get(url, params=params)
+            response.raise_for_status()
+            data = response.json()
+            
+            if data.get("success") and "data" in data:
+                matches = data["data"].get("match", [])
+                
+                # Buscar el partido con el ID especificado
+                for match in matches:
+                    if match.get("id") == match_id:
+                        logger.info(f"Encontrado partido {match_id} en partidos en vivo")
+                        return match
+                
+                logger.warning(f"No se encontró el partido {match_id} en partidos en vivo")
+                return {}
+            else:
+                logger.error(f"Error al obtener partidos en vivo: {data.get('error', 'Error desconocido')}")
+                return {}
+        except Exception as e:
+            logger.error(f"Error al hacer la solicitud a la API de LiveScore: {e}")
             return {}
 
     def get_match_events(self, match_id: str) -> List[Dict[str, Any]]:
@@ -183,7 +232,9 @@ class LiveScoreClient:
                 logger.info(f"Found {len(events)} events for match {match_id}")
                 return events
             else:
-                logger.error(f"Error getting match events: {data.get('error', 'Unknown error')}")
+                error_msg = data.get("error", "Unknown error")
+                logger.error(f"Error getting match events: {error_msg}")
+                # Si hay un error, devolver una lista vacu00eda en lugar de fallar
                 return []
         except Exception as e:
             logger.error(f"Error making request to LiveScore API: {e}")
@@ -215,11 +266,13 @@ class LiveScoreClient:
             data = response.json()
             
             if data.get("success") and "data" in data:
-                statistics = data["data"]
+                stats = data["data"]
                 logger.info(f"Got statistics for match {match_id}")
-                return statistics
+                return stats
             else:
-                logger.error(f"Error getting match statistics: {data.get('error', 'Unknown error')}")
+                error_msg = data.get("error", "Unknown error")
+                logger.error(f"Error getting match statistics: {error_msg}")
+                # Si hay un error, devolver un diccionario vacu00edo en lugar de fallar
                 return {}
         except Exception as e:
             logger.error(f"Error making request to LiveScore API: {e}")
