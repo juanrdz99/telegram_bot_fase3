@@ -1,0 +1,67 @@
+[
+  {
+    "id": "1",
+    "type": "goal",
+    "minute": "23",
+    "player": "Carlos Rodríguez",
+    "home_away": "home",
+    "info": "Gol",
+    "team": "Cruz Azul"
+  },
+  {
+    "id": "2",
+    "type": "yellow_card",
+    "minute": "34",
+    "player": "Álvaro Fidalgo",
+    "home_away": "away",
+    "info": "Tarjeta amarilla",
+    "team": "Club América"
+  },
+  {
+    "id": "3",
+    "type": "goal",
+    "minute": "45",
+    "player": "Henry Martín",
+    "home_away": "away",
+    "info": "Gol",
+    "team": "Club América"
+  },
+  {
+    "id": "4",
+    "type": "substitution",
+    "minute": "60",
+    "player": "Uriel Antuna",
+    "player_in": "Rodrigo Huescas",
+    "home_away": "home",
+    "info": "Sustitución",
+    "team": "Cruz Azul"
+  },
+  {
+    "id": "5",
+    "type": "goal",
+    "minute": "67",
+    "player": "Ignacio Rivero",
+    "home_away": "home",
+    "info": "Gol",
+    "team": "Cruz Azul"
+  },
+  {
+    "id": "6",
+    "type": "yellow_card",
+    "minute": "75",
+    "player": "Luis Romo",
+    "home_away": "home",
+    "info": "Tarjeta amarilla",
+    "team": "Cruz Azul"
+  },
+  {
+    "id": "7",
+    "type": "substitution",
+    "minute": "80",
+    "player": "Henry Martín",
+    "player_in": "Julián Quiñones",
+    "home_away": "away",
+    "info": "Sustitución",
+    "team": "Club América"
+  }
+]

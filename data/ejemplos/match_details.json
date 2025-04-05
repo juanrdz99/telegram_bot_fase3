@@ -1,0 +1,25 @@
+{
+  "id": "12345",
+  "date": "2025-03-18",
+  "time": "19:00:00",
+  "home_name": "Cruz Azul",
+  "away_name": "Club América",
+  "score": {
+    "home": 2,
+    "away": 1
+  },
+  "ht_score": {
+    "home": 1,
+    "away": 1
+  },
+  "venue": {
+    "name": "Estadio Azteca",
+    "city": "Ciudad de México"
+  },
+  "competition": {
+    "name": "Liga MX",
+    "id": "45"
+  },
+  "round": "10",
+  "status": "FT"
+}

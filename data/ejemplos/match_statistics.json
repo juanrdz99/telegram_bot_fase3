@@ -1,0 +1,50 @@
+{
+  "possession_ht": {
+    "home": "58",
+    "away": "42"
+  },
+  "shots_on_target_ht": {
+    "home": "4",
+    "away": "2"
+  },
+  "corners_ht": {
+    "home": "3",
+    "away": "1"
+  },
+  "possession_ft": {
+    "home": "55",
+    "away": "45"
+  },
+  "shots_on_target_ft": {
+    "home": "7",
+    "away": "3"
+  },
+  "corners_ft": {
+    "home": "5",
+    "away": "2"
+  },
+  "fouls": {
+    "home": "12",
+    "away": "14"
+  },
+  "yellow_cards": {
+    "home": "1",
+    "away": "1"
+  },
+  "red_cards": {
+    "home": "0",
+    "away": "0"
+  },
+  "offsides": {
+    "home": "3",
+    "away": "2"
+  },
+  "goals": {
+    "home": "0",
+    "away": "0"
+  },
+  "penalties": {
+    "home": "0",
+    "away": "0"
+  }
+}
